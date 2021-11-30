@@ -1,0 +1,53 @@
+.header {
+    .header-top {
+        background-color: $green;
+        padding: 15px 0;
+        &__inner {
+            display: flex;
+            justify-content: flex-start;
+        }
+        &__menu {
+            margin-left: auto;
+            display: flex;
+        }
+        &__auth {
+            margin-left: 20px;
+            position: relative;
+            @extend %rubik-400;
+            color: #fff;
+            text-decoration: none;
+            &:before {
+                position: absolute;
+                content: '';
+                width: 2px;
+                height: 20px;
+                background-color: #fff;
+                z-index: 100;
+                border-radius: 0.4px;
+                -webkit-border-radius: 0.4px;
+                -moz-border-radius: 0.4px;
+                -ms-border-radius: 0.4px;
+                -o-border-radius: 0.4px;
+                left: -20px;
+}
+        }
+        &__filter-form {
+            margin-right: 20px;
+        }
+        &__link {
+            @extend %rubik-400;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        &__lang {
+            border: none;
+            background-color: $green;
+            color: #fff;
+            @extend %rubik-400;
+            font-size: 16px;
+            outline: none;
+        }
+        
+    }
+}
