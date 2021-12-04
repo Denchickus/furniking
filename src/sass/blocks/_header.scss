@@ -52,11 +52,92 @@
     }
 
     .header-bottom{
+        height: 92px;
+        .container {
+            height: 100%;
+        }
         .header-inner {
-            height: 92px;
+            height: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            .header-bottom-nav__link + .header-bottom-nav__link {
+                margin-left: 30px;
+            }
+            .header-bottom-nav__link {
+                position: relative;
+            }
+            .header-bottom-nav__num {
+                position: absolute;
+                content: '';
+                width: 20px;
+                height: 20px;
+                box-sizing: border-box;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                background-color: $green;
+                text-align: center;
+                color: #fff;
+                font-size: 12px;
+                line-height: 8px;
+                padding-top: 6px;
+                top: -14px;
+                right: -12px;
         }
-    }  
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        .header-title {
+            margin-left: 5px;
+            @extend %rubik-500;
+            font-size: 24px;
+        }
+    }
+
+    &__form {
+        display: flex;
+        height: 46px;
+        border: 2px solid $green;
+        border-radius: 8px;
+        overflow: hidden;
+        width: 580px;
+
+        .header__form-input{
+            padding-left: 25px;
+            outline: none;
+            border: none;
+            font-size: 14px;
+            @extend %rubik-400;
+            color: #B0B0B0;
+            width: 100%;
+
+        }
+        div {
+            display: flex;
+            padding: 0 10px 0 10px;
+            font-size: 14px;
+            @extend %rubik-400;
+            select {
+                border: none;
+                outline: none;
+                border-left: 1.5px solid rgba(227, 227, 227, 0.78);
+                padding-left: 10px;
+            }            
+        }
+    }
+    .search-btn{
+        background-color: $green;
+        border: none;
+        width: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        padding: 0 21px;
+    }
+    }
 }
