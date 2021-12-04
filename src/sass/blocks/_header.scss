@@ -50,4 +50,13 @@
         }
         
     }
+
+    .header-bottom{
+        .header-inner {
+            height: 92px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }  
 }
